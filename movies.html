@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Display Movie Information</title>
+    <meta charset="utf-8"/>
+	<style>
+.container
+{
+    margin-left:auto;
+	margin-right:auto;
+}
+.left 
+{
+    float: left;
+    width: 30%;
+    padding: 5px;
+}
+.right
+{
+    float: right;
+    width: 50%;
+    padding: 5px;
+}
+.clear
+{
+    clear: both;
+}
+</style>
+    <script type="text/javascript" src="movies.js"></script>
+  </head>
+  <body onload="initialize();">
+    <form>
+       <label>Movie title: <input type="text" id="form-input"/></label>
+       <input type="button" onclick="sendRequest();" value="Display Info"/>
+    </form>
+	<div class="container">
+    <div class="left" id="output">&nbsp;</div>
+	<div class="right" id="infor">&nbsp;</div>
+	<div class="clear">&nbsp;</div>
+	</div>
+  </body>
+</html>
